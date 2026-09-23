@@ -1,0 +1,72 @@
+=== CHAIN-OF-THOUGHT COMPARISON | provider: groq | model: openai/gpt-oss-20b ===
+
+========================================================================
+QUESTION 1: A student takes three courses costing Rs. 12,000, Rs. 18,000 and Rs. 15,000. She gets a 15% scholarship on the total and pays the rest in 4 equal instalments. How much is each instalment?
+
+--- WITHOUT CoT ---
+Rs. 9,562.50 per instalment. 
+
+--- WITH CoT ---
+**Step 1 – Compute the total cost of the courses**  
+\(12,000 + 18,000 + 15,000 = 45,000\) rupees.
+
+**Step 2 – Calculate the scholarship amount (15 % of the total)**  
+\(0.15 \times 45,000 = 6,750\) rupees.
+
+**Step 3 – Determine the amount that must be paid after the scholarship**  
+\(45,000 - 6,750 = 38,250\) rupees.
+
+**Step 4 – Divide the payable amount into 4 equal instalments**  
+\(\dfrac{38,250}{4} = 9,562.5\) rupees per instalment.
+
+---
+
+**Final Answer:** 9,562.50 rupees per instalment. 
+
+========================================================================
+QUESTION 2: A lab has 18 computers. In the morning each computer is shared by 2 students, and in the afternoon by 3 students. How many student sittings happen in one day?
+
+--- WITHOUT CoT ---
+90 
+
+--- WITH CoT ---
+**Step 1:**  
+Count the student sittings in the morning.  
+- 18 computers × 2 students per computer = **36** student sittings.
+
+**Step 2:**  
+Count the student sittings in the afternoon.  
+- 18 computers × 3 students per computer = **54** student sittings.
+
+**Step 3:**  
+Add the morning and afternoon sittings to get the total for one day.  
+- 36 (morning) + 54 (afternoon) = **90** student sittings.
+
+Final Answer: 90 
+
+========================================================================
+QUESTION 3: Ravi is taller than Kumar. Kumar is taller than Arun. Priya is shorter than Arun. Who is the tallest and who is the shortest?
+
+--- WITHOUT CoT ---
+Tallest: Ravi  
+Shortest: Priya 
+
+--- WITH CoT ---
+**Step 1:** List the given comparisons  
+- Ravi is taller than Kumar → Ravi > Kumar  
+- Kumar is taller than Arun → Kumar > Arun  
+- Priya is shorter than Arun → Priya < Arun  
+
+**Step 2:** Chain the comparisons  
+From Ravi > Kumar and Kumar > Arun, we can chain them:  
+Ravi > Kumar > Arun  
+
+**Step 3:** Place Priya in the chain  
+We know Priya < Arun. Since Arun is already below Kumar and Ravi, Priya must be below Arun:  
+Priya < Arun < Kumar < Ravi  
+
+**Step 4:** Identify the extremes  
+- The tallest person is the one at the top of the chain: Ravi.  
+- The shortest person is the one at the bottom of the chain: Priya.  
+
+**Final Answer:** Ravi is the tallest and Priya is the shortest. 

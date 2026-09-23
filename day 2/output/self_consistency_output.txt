@@ -1,0 +1,11 @@
+(.venv) PS C:\Users\SARAVANAN\Desktop\Day 1\day 2> python self_consistency.py
+
+=== SELF-CONSISTENCY | provider: groq | model: openai/gpt-oss-20b ===
+
+QUESTION: A student takes three courses costing Rs. 12,000, Rs. 18,000 and Rs. 15,000. She gets a 15% scholarship on the total and pays the rest in 4 equal instalments. How much is each instalment? 
+
+   run 1: 9562.50
+   run 2: ** Rs. 9,562.50 per instalment.
+   run 3: ** Rs. 9,562.50 per instalment.
+   run 4: 9562.5
+   run 5: ** 9562.50
