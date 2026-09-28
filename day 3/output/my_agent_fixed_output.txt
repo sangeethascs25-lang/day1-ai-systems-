@@ -1,0 +1,29 @@
+(.venv) PS C:\Users\SARAVANAN\Desktop\Day 1> python "day 3\my_agent_fixed.py"
+
+=== MY AGENT (guards on) | provider: groq | model: openai/gpt-oss-20b ===
+
+
+Q: Read day 3/notice.html and tell me the total fee for CS101 and AI202 after the merit scholarship.
+   step 1: read_webpage({'url': 'day 3/notice.html'}) -> Fee Notice Department of AI and Data Science - Fee Notice 2026 The following course fees are applicable for the current 
+A: The combined fee for **CS101** and **AI202** before any scholarship is:
+
+- CS101: Rs. 12,000  
+- AI202: Rs. 18,000  
+
+**Total before scholarship:** Rs. 30,000  
+
+A merit scholarship gives a 10 % reduction on the total fee:
+
+- 10 % of 30,000 = Rs. 3,000  
+
+**Total after the merit scholarship:**  
+30,000 – 3,000 = **Rs. 27,000**
+
+Q: Read day 3/fees.html and tell me the fee for CS101.
+   step 1: read_webpage({'url': 'day 3/fees.html'}) -> Read error: 'day 3/fees.html' is not a URL and no such file exists.
+A: I couldn’t locate the file at the path you provided. Could you double‑check the location or provide the exact file name (including any folder names or spaces) so I can read it for you?
+
+Q: Read day 3/big.html and tell me how many students are listed.
+   step 1: read_webpage({'url': 'day 3/big.html'}) -> Fee Notice Department of AI and Data Science - Fee Notice 2026 The following course fees are applicable for the current 
+A: I read the file, and it contains a fee notice for courses. It does not list any students, so there are **0 students listed**.
+(.venv) PS C:\Users\SARAVANAN\Desktop\Day 1> 

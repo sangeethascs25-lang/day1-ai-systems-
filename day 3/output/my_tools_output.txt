@@ -1,0 +1,7 @@
+(.venv) PS C:\Users\SARAVANAN\Desktop\Day 1> python "day 3\my_tools.py"
+27000.0
+1024
+Calculator error: invalid syntax (<unknown>, line 1). Use only numbers and + - * / ( ).
+Read error: 'notice.html' is not a URL and no such file exists.
+Read error: 'no_such_file.html' is not a URL and no such file exists.
+(.venv) PS C:\Users\SARAVANAN\Desktop\Day 1> 

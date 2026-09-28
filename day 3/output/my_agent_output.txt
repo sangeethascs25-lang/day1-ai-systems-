@@ -1,0 +1,7 @@
+=== MY AGENT (no guards) | provider: groq | model: openai/gpt-oss-20b ===
+
+Q: Read Day 3/notice.html and tell me the total fee for CS101 and AI202 after the merit scholarship.
+   step 1: read_webpage({'url': 'Day 3/notice.html'}) -> Fee Notice Department of AI and Data Science - Fee Notice 2026 The following course fees are applicable for the current 
+A: The combined fee for CS101 and AI202, after applying the 10 % merit‑scholarship discount, is **Rs. 27,000**.
+(.venv) PS C:\Users\SARAVANAN\Desktop\Day 1> 
+
